@@ -1,0 +1,40 @@
+<xsd:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="com.hibret.SOAPWebService/soap-web-service"
+	targetNamespace="com.hibret.SOAPWebService/soap-web-service"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+	<xsd:element name="getCountryRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xs:element name="name" type="xs:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="getCountryResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="country" type="tns:country" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="country">
+		<xsd:sequence>
+			<xsd:element name="name" type="xs:string" />
+			<xsd:element name="population" type="xs:int" />
+			<xsd:element name="capital" type="xs:string" />
+			<xsd:element name="currency" type="tns:currency" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="currency">
+		<xsd:restriction base="xs:string">
+			<xsd:enumeration value="ETB" />
+			<xsd:enumeration value="GBP" />
+			<xsd:enumeration value="EUR" />
+			<xsd:enumeration value="PLN" />
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
