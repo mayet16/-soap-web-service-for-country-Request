@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.hibret.SOAPWebService.CountryClientTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.7 s - in com.hibret.SOAPWebService.CountryClientTest

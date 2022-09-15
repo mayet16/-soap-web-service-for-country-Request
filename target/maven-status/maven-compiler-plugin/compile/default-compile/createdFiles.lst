@@ -1,0 +1,10 @@
+com\hibret\SOAPWebService\ProducingWebServiceApplication.class
+soapwebservice\hibret\com\soap_web_service\Currency.class
+soapwebservice\hibret\com\soap_web_service\GetCountryResponse.class
+soapwebservice\hibret\com\soap_web_service\GetCountryRequest.class
+soapwebservice\hibret\com\soap_web_service\Country.class
+com\hibret\SOAPWebService\CountryEndpoint.class
+com\hibret\SOAPWebService\WebServiceConfig.class
+soapwebservice\hibret\com\soap_web_service\ObjectFactory.class
+com\hibret\SOAPWebService\CountryRepository.class
+soapwebservice\hibret\com\soap_web_service\package-info.class
